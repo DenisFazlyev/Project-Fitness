@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'gora_free';
+    src: url('../fonts/gora-free.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-display: optional;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1060px;
+}
+
+
+.header {
+    height: 75px;
+    background: #131415;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav {
+    display: inline;
+}
+
+.contacts__phone {
+    font-size: 21px;
+    color: #fff;
+}
+
+.contacts__desc {
+    text-decoration: underline;
+    color: rgba(248, 149, 19, 0.7);
+    text-align: right;
+    font-size: 14px;
+}
+
+ul.menu, li.menu, a, .logo, .contacts {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contacts {
+    float: right;
+}
+
+a.logo {
+    font-family: 'gora_free', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #f89513;
+}
+
+ul.menu {
+    text-align: center;
+}
+
+.news__fresh {
+    width: 830px;
+}
+
+.news__foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.news__text {
+    display: inline-block;
+    width: 610px;
+}
+
+.news__fresh__list {
+    list-style: none;
+}
+
+.news__items {
+    border-bottom: 1px solid black;
+}
+
+.news__items:last-child {
+    border-bottom: none;
+}
