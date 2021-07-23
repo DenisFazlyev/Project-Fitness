@@ -72,6 +72,12 @@ body {
     font-size: 14px;
 }
 
+.breadcrumbs__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
 ul.menu, li.menu, a, .logo, .contacts {
     display: inline-block;
     text-decoration: none;
@@ -93,6 +99,10 @@ ul.menu {
 
 .banner {
     background-image: url(../IMG/Banner/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1040px;
+    height: 620px;
 }
 
 .news__fresh {
