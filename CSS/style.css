@@ -13,26 +13,51 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-display: optional;
+    /* font-display: optional; */
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .container {
     margin: 0 auto;
+    padding: 20px;
     width: 1060px;
 }
 
 
 .header {
-    height: 75px;
     background: #131415;
     font-weight: 700;
     color: #fff;
 }
 
+.header__logo, .header__contact, .header__nav {
+    float: left;
+    width: 20%;
+}
+
+.header__logo {
+    margin-top: 10px;
+}
+
+.header__nav {
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header__contact {
+    text-align: right;
+}
+
+
 .nav {
     display: inline-block;
-    /* display: flex;
-    justify-content: center; */
+    
 }
 
 .contacts__phone {
@@ -64,6 +89,10 @@ a.logo {
 
 ul.menu {
     text-align: center;
+}
+
+.banner {
+    background-image: url(../IMG/Banner/Image.png);
 }
 
 .news__fresh {
@@ -98,7 +127,7 @@ ul.menu {
     background: #131415;
     color: #fff;
     width: 100%;
-    
+    height: 570px;
 }
 
 .features__head {
@@ -106,23 +135,39 @@ ul.menu {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    padding: 60px;
 }
 
 .features__content {
-    /* display: inline-block; */
-    width: calc(100% - 360px);
-    margin: 0 auto;
-
+    display: inline-block;
+    position: relative;
     /* display: flex;
     justify-content: center; */
+    width: 741px;
+    margin-left: 180px;
+    margin-right: 180px;
     
 }
 
 .features__options {
     display: inline-block;
     text-align: center;
-    width: 32.9%;
-    /* vertical-align: top; */
+    width: 200px;
+    /* margin: 0 35px 0 35px; */
+    
+}
+
+.uniq {
+    margin-right: 35px;
+}
+
+.prem {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.coach {
+    margin-left: 35px;
 }
 
 .features__list {
