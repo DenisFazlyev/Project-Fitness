@@ -44,6 +44,34 @@ body {
     margin-top: 10px;
 }
 
+a.logo {
+    font-family: 'gora_free', Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: #f89513;
+    letter-spacing: 2px;
+}
+
+ul.menu, li.menu, a, .logo, .contacts {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contacts {
+    float: right;
+}
+
+ul.menu {
+    text-align: center;
+}
+
+.banner {
+    background-image: url(../IMG/Banner/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1040px;
+    height: 620px;
+}
+
 .header__nav {
     width: 60%;
     text-align: center;
@@ -72,37 +100,39 @@ body {
     font-size: 14px;
 }
 
+/* ХЛЕБНЫЕ КРОШКИ */
+
+.breadcrumbs {
+    margin: 45px 0 30px 110px;
+}
+
 .breadcrumbs__item {
     display: inline-block;
     vertical-align: middle;
 }
 
-
-ul.menu, li.menu, a, .logo, .contacts {
-    display: inline-block;
-    text-decoration: none;
+.breadcrumbs__item::after { /* Ставим / между слов */
+    content: "/";
+    color: #221f1f;
+    opacity: .8;
 }
 
-.contacts {
-    float: right;
+.breadcrumbs__item:last-child::after { /* Убираем последний элемент */
+    display: none;
 }
 
-a.logo {
-    font-family: 'gora_free', Arial, Helvetica, sans-serif;
-    text-align: left;
+.readcrumbs__item--link {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
     color: #f89513;
+    text-decoration: underline;
 }
 
-ul.menu {
-    text-align: center;
-}
-
-.banner {
-    background-image: url(../IMG/Banner/Image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 1040px;
-    height: 620px;
+.readcrumbs__item--link_activ {
+    color: #221f1f;
+    opacity: .8;
+    text-decoration: none;
 }
 
 .news__fresh {
