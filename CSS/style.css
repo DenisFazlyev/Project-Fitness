@@ -8,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 body {
@@ -135,6 +136,14 @@ ul.menu {
     text-decoration: none;
 }
 
+.news {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.last--news {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .news__fresh {
     width: 830px;
 }
@@ -212,6 +221,7 @@ ul.menu {
 
 .features__list {
     text-align: left;
+    list-style-position: inside;
 }
 
 .heading {
@@ -223,4 +233,21 @@ ul.menu {
 .features__options--text {
     font-size: 18px;
     font-weight: 400;
+}
+
+.pagination {
+    text-align: center ;
+}
+
+.pagination__controls, .pagination__display, 
+.pagination__list, .pagination__item, .pagination__btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pagination__display {
+    
+    font-size: 14px;
+    font-weight: 300;
+    color: #656464;
+    margin-right: 20px;
 }
