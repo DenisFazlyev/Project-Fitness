@@ -17,6 +17,7 @@ body {
     /* font-display: optional; */
 }
 
+
 .clearfix:after {
     content: "";
     display: block;
@@ -28,7 +29,6 @@ body {
     padding: 20px;
     width: 1060px;
 }
-
 
 .header {
     background: #131415;
@@ -65,13 +65,6 @@ ul.menu {
     text-align: center;
 }
 
-.banner {
-    background-image: url(../IMG/Banner/Image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 1040px;
-    height: 620px;
-}
 
 .header__nav {
     width: 60%;
@@ -83,10 +76,8 @@ ul.menu {
     text-align: right;
 }
 
-
 .nav {
     display: inline-block;
-    
 }
 
 .contacts__phone {
@@ -103,8 +94,8 @@ ul.menu {
 
 /* ХЛЕБНЫЕ КРОШКИ */
 
-.breadcrumbs {
-    margin: 45px 0 30px 110px;
+/* .breadcrumbs {
+    margin: 45px 0 0px 110px;
 }
 
 .breadcrumbs__item {
@@ -112,17 +103,19 @@ ul.menu {
     vertical-align: middle;
 }
 
-.breadcrumbs__item::after { /* Ставим / между слов */
-    content: "/";
+.breadcrumbs__item::after { */
+    /* Ставим / между слов */
+    /* content: "/";
     color: #221f1f;
     opacity: .8;
 }
 
-.breadcrumbs__item:last-child::after { /* Убираем последний элемент */
-    display: none;
+.breadcrumbs__item:last-child::after { */
+    /* Убираем последний элемент */
+    /* display: none;
 }
 
-.readcrumbs__item--link {
+.readcrumbs__item-link {
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
@@ -130,17 +123,31 @@ ul.menu {
     text-decoration: underline;
 }
 
-.readcrumbs__item--link_activ {
+.readcrumbs__item-link_activ {
     color: #221f1f;
     opacity: .8;
     text-decoration: none;
+} */
+
+.banner {
+    background-image: url(../IMG/Banner/Image.png);
+    background-position:center center;
+   /* background-size:cover; */
+    background-repeat: no-repeat;
+    /* width: 1040px; */
+    height: 620px;
 }
 
 .news {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-.last--news {
+.news__box {
+    display: flex;
+    justify-content: center;
+}
+
+.last-news {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -150,15 +157,17 @@ ul.menu {
     margin-left: 20px;
 }
 
-.news__old--top {
+.news__old-top {
     float: right;
     width: 160px;
     margin-right: 20px;
 }
 
-.news__old--foto {
+.news__old-foto {
+    background-position: center center;
+    background-size: cover;
     width: 160px;
-    height: 160px;
+    margin-top: 20px;
 }
 
 .news__foto {
@@ -174,12 +183,32 @@ ul.menu {
     float: left;
 }
 
+.news__data {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.news__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.news__content {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
 .news__fresh__list {
     list-style: none;
 }
 
 .news__items {
     border-bottom: 2px solid #f5f5f5;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width: 800px;
 }
 
 .news__items:last-child {
@@ -202,14 +231,13 @@ ul.menu {
 }
 
 .features__content {
-    display: inline-block;
-    position: relative;
-    /* display: flex;
-    justify-content: center; */
-    width: 741px;
+    /* display: inline-block;
+    position: relative; */
+    display: flex;
+    justify-content: center;
+    /* width: 741px; */
     margin-left: 180px;
     margin-right: 180px;
-    
 }
 
 .features__options {
@@ -217,7 +245,6 @@ ul.menu {
     text-align: center;
     width: 200px;
     /* margin: 0 35px 0 35px; */
-    
 }
 
 .uniq {
@@ -244,22 +271,21 @@ ul.menu {
     text-transform: uppercase;
 }
 
-.features__options--text {
+.features__options-text {
     font-size: 18px;
     font-weight: 400;
 }
 
 .pagination {
-    text-align: center ;
+    text-align: center;
 }
 
-.pagination__controls, .pagination__display, 
-.pagination__list, .pagination__item, .pagination__btn {
+.pagination__controls, .pagination__display, .pagination__list, .pagination__item, .pagination__btn {
     display: inline-block;
     vertical-align: middle;
 }
+
 .pagination__display {
-    
     font-size: 14px;
     font-weight: 300;
     color: #656464;
@@ -268,7 +294,7 @@ ul.menu {
 
 .pagination__page {
     display: block;
-    padding: 7px 0;
+    padding: 5px 0;
     width: 25px;
     border-radius: 5px;
     color: #000;
@@ -276,7 +302,7 @@ ul.menu {
     font-weight: 700;
 }
 
-.pagination__page_active {
+.pagination__page-active {
     background: #27273e;
     color: #fff;
 }
