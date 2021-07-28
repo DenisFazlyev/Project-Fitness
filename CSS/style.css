@@ -61,9 +61,9 @@ ul.menu, li.menu, a, .logo, .contacts {
     float: right;
 }
 
-ul.menu {
+/* ul.menu {
     text-align: center;
-}
+} */
 
 
 .header__nav {
@@ -78,6 +78,30 @@ ul.menu {
 
 .nav {
     display: inline-block;
+}
+
+.nav__main {
+    background: url(../IMG/Menu/main_icon.png)0 0 no-repeat;
+}
+.nav__feed {
+    background: url(../IMG/Menu/feed_icon.png)0 0 no-repeat;
+}
+.nav__service {
+    background: url(../IMG/Menu/service_icon.png)0 0 no-repeat;
+}
+
+.nav__link {
+    float: left;
+    margin-right: 20px;
+}
+
+.nav__icon {
+    width: 24px;
+    height: 16px;
+    /* display: inline-block;
+    vertical-align: middle; */
+;
+
 }
 
 .contacts__phone {
