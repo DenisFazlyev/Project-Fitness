@@ -17,6 +17,15 @@ body {
     /* font-display: optional; */
 }
 
+body, html {
+    min-height: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 1100px;
+    min-height: 100%;
+}
 
 .clearfix:after {
     content: "";
@@ -340,4 +349,11 @@ a.logo {
 .pagination__page-active {
     background: #27273e;
     color: #fff;
+}
+
+.footer {
+    min-width: 1100px;
+    min-height: 75px;                      ;
+    background-color: #131415;
+    margin-top: 65px;
 }
