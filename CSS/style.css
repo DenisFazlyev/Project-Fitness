@@ -18,13 +18,14 @@ body {
 }
 
 body, html {
-    min-height: 100%;
+    height: 100%;
 }
 
 .wrapper {
-    overflow: hidden;
-    min-width: 1100px;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
 }
 
 .clearfix:after {
@@ -43,6 +44,7 @@ body, html {
     background: #131415;
     font-weight: 700;
     color: #fff;
+    min-height: 75px;
 }
 
 .header__logo, .header__contact, .header__nav {
@@ -61,7 +63,9 @@ a.logo {
     letter-spacing: 2px;
 }
 
-/*ul.menu, li.menu,*/ a, .logo, .contacts {
+/*ul.menu, li.menu,*/
+
+a, .logo, .contacts {
     display: inline-block;
     text-decoration: none;
 }
@@ -73,7 +77,6 @@ a.logo {
 /* ul.menu {
     text-align: center;
 } */
-
 
 .header__nav {
     display: inline;
@@ -97,9 +100,11 @@ a.logo {
 .nav__main {
     background: url(../IMG/Menu/main_icon.png)0 0 no-repeat;
 }
+
 .nav__feed {
     background: url(../IMG/Menu/feed_icon.png)0 0 no-repeat;
 }
+
 .nav__service {
     background: url(../IMG/Menu/service_icon.png)0 0 no-repeat;
 }
@@ -148,15 +153,19 @@ a.logo {
 }
 
 .breadcrumbs__item::after { */
-    /* Ставим / между слов */
-    /* content: "/";
+
+/* Ставим / между слов */
+
+/* content: "/";
     color: #221f1f;
     opacity: .8;
 }
 
 .breadcrumbs__item:last-child::after { */
-    /* Убираем последний элемент */
-    /* display: none;
+
+/* Убираем последний элемент */
+
+/* display: none;
 }
 
 .readcrumbs__item-link {
@@ -175,8 +184,8 @@ a.logo {
 
 .banner {
     background-image: url(../IMG/Banner/Image.png);
-    background-position:center center;
-   /* background-size:cover; */
+    background-position: center center;
+    /* background-size:cover; */
     background-repeat: no-repeat;
     /* width: 1040px; */
     height: 620px;
@@ -352,8 +361,10 @@ a.logo {
 }
 
 .footer {
+    flex: 1 0 auto;
     min-width: 1100px;
-    min-height: 75px;                      ;
+    min-height: 75px;
     background-color: #131415;
     margin-top: 65px;
+    color: #fff;
 }
