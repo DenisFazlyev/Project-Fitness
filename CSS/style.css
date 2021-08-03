@@ -22,10 +22,15 @@ body, html {
 }
 
 .wrapper {
-    min-height: 85%;
-    display: flex;
-    flex-direction: column;
-    /* height: 100%; */
+    min-width: 1100px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.wrapper::after {
+    content: '';
+    display: block;
+    height: 75px;
 }
 
 .clearfix:after {
@@ -41,6 +46,7 @@ body, html {
 }
 
 .header {
+    min-width: 1100px;
     background: #131415;
     font-weight: 700;
     color: #fff;
@@ -181,6 +187,11 @@ a, .logo, .contacts {
     opacity: .8;
     text-decoration: none;
 } */
+
+main {
+    margin-bottom: 75px; /* что бы футер не нализал на контент*/
+}
+
 
 .banner {
     background-image: url(../IMG/Banner/Image.png);
@@ -359,12 +370,14 @@ a, .logo, .contacts {
     background: #27273e;
     color: #fff;
 }
+.empty {
+    height: 75px;
+}
 
 .footer {
-    flex: 1 0 auto;
     min-width: 1100px;
     min-height: 75px;
     background-color: #131415;
-    margin-top: 65px;
+    margin-top: -75px;
     color: #fff;
 }
