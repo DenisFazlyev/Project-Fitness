@@ -1,0 +1,37 @@
+/* ХЛЕБНЫЕ КРОШКИ */
+
+.breadcrumbs {
+    margin: 45px 0 0px 110px;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadcrumbs__item::after {
+    /* Ставим / между слов */
+    content: "/";
+    color: #221f1f;
+    opacity: .8;
+}
+
+/* Убираем последний элемент */
+
+.breadcrumbs__item:last-child::after {
+    display: none;
+}
+
+.readcrumbs__item-link {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #f89513;
+    text-decoration: underline;
+}
+
+.readcrumbs__item-link_activ {
+    color: #221f1f;
+    opacity: .8;
+    text-decoration: none;
+}

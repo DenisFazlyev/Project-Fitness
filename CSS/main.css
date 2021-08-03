@@ -1,0 +1,11 @@
+/* Layout */
+@import url(../CSS/layout/normalize.css);
+@import url(../CSS/layout/base.css);
+@import url(../CSS/layout/fonts.css);
+
+/* Blocks */
+@import url(../CSS/blocks/header.css);
+@import url(../CSS/blocks/pagination.css);
+@import url(../CSS/blocks/main-page.css);
+@import url(../CSS/blocks/breadcrumbs.css);
+@import url(../CSS/blocks/footer.css);
