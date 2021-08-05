@@ -5,3 +5,38 @@
     margin-top: -75px;
     color: #fff;
 }
+
+.footer__col {
+    width: 20%;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.footer__text {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer__text_link {
+    font-weight: 600;
+    text-decoration: underline;
+    color: currentColor;
+    /*наследование цвета*/
+}
+
+.bold_text {
+    font-weight: 700;
+}
+
+.footer__logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer__socials {
+    display: inline-block;
+    width: 20%;
+}

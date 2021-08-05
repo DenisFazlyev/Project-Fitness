@@ -37,6 +37,10 @@ a, .logo, .contacts {
     text-align: center;
 } */
 
+address {
+    font-style: normal;
+}
+
 .header__nav {
     display: inline;
     width: 60%;
