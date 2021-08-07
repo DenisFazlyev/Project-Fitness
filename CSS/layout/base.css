@@ -19,17 +19,7 @@ body {
     height: 75px;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 20px;
-    width: 1060px;
-}
 
-.clearfix:after {
-    content: "";
-    display: block;
-    clear: both;
-}
 
 .empty { /* блок для того что бы футер не нализал на контент */
     height: 75px;

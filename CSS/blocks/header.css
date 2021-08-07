@@ -6,6 +6,18 @@
     min-height: 75px;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 1060px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
 .header__logo, .header__contact, .header__nav {
     float: left;
     width: 20%;
@@ -42,22 +54,35 @@ address {
 }
 
 .header__nav {
-    display: inline;
     width: 60%;
+    min-height: 50px;
+    /* display: inline-block;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px; */
 }
 
 .header__contact {
     text-align: right;
 }
 
-/* .nav {
-    display: inline-block;
-} */
 
-.menu {
-    text-align: center;
+.nav {
+    width: 100%;
+    padding: 10px;
+    text-align: justify;
+    font-size: 0%; 
+    
+    &:after {
+        content: "";
+        width: 100%;
+        display: inline-block;
+        height: 0px;
+    }
+}
+
+.nav__item {
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .nav__main {
@@ -72,20 +97,20 @@ address {
     background: url(../../IMG/Menu/service_icon.png)0 0 no-repeat;
 }
 
-.nav__link {
+/* .nav__link {
     float: left;
     margin-right: 20px;
-}
+} */
 
 .nav__item {
-    display: inline;
+    display: inline-block;
 }
 
 .nav__icon {
     width: 24px;
     height: 16px;
-    /* display: inline-block;
-    vertical-align: middle; */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .nav__link:hover .nav__text {
