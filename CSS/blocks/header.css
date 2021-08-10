@@ -124,6 +124,10 @@ address {
     text-align: right;
     font-size: 14px;
 }
+.contacts__desc:hover {
+    color:#b9b9b9;
+    cursor: pointer;
+}
 
 [data-tooltip] {
     position: relative;
@@ -136,12 +140,12 @@ address {
     content: '';
     position: absolute;
     top: 1.4em;
-    right: 45px;
+    right: 10px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #3989c9;
+    border-right: 0px solid transparent;
+    border-bottom: 10px solid #fff;
 }
 
 /* Выводим саму подсказку */
@@ -156,9 +160,9 @@ address {
     left: 30px;
     top: 2em;
     /* Положение подсказки */
-    background: #3989c9;
+    background: #fff;
     /* Синий цвет фона */
-    color: #fff;
+    color: #f89513;
     /* Цвет текста */
     padding: 0.5em;
     /* Поля вокруг текста */
