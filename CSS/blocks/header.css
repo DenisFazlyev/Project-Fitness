@@ -145,7 +145,7 @@ address {
     height: 0;
     border-left: 10px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid #e6e4e4;
 }
 
 /* Выводим саму подсказку */
@@ -160,7 +160,7 @@ address {
     left: 30px;
     top: 2em;
     /* Положение подсказки */
-    background: #fff;
+    background: #e6e4e4;
     /* Синий цвет фона */
     color: #f89513;
     /* Цвет текста */
