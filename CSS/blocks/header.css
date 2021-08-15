@@ -4,36 +4,42 @@
     font-weight: 700;
     color: #fff;
     min-height: 75px;
+    position: relative;
 }
 
 .container {
     margin: 0 auto;
     /* padding: 20px; */
     width: 1060px;
+    min-height: 46px;
     box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 20px);
 
 }
 
-.clearfix:after {
+/* .clearfix:after {
     content: "";
     display: block;
     clear: both;
-}
+} */
 
 .header__logo, .header__contact, .header__nav {
+    box-sizing: border-box;
     float: left;
     width: 33.3%;
+    /* padding-top: 20px; */
 }
 
-.header__logo {
-    margin-top: 10px;
-}
 
 a.logo {
     font-family: 'gora_free', Arial, Helvetica, sans-serif;
     text-align: left;
     color: #f89513;
     letter-spacing: 2px;
+    /* padding-top: 10px; */
 }
 
 /*ul.menu, li.menu,*/
@@ -57,7 +63,7 @@ address {
 
 .header__nav {
     /* width: 60%; */
-    min-height: 50px;
+    /* min-height: 50px; */
     /* display: inline-block;
     text-align: center;
     margin-top: 10px; */
@@ -72,6 +78,7 @@ address {
     /* padding: 10px; */
     text-align: justify;
     font-size: 0%;
+   
 }
 
 .nav {
@@ -83,13 +90,14 @@ address {
     flex-grow: 1;
     overflow: hidden;
     height: 25px;
+    /* margin-top: 7px; */
 }
-
+/* 
 .menu::after {
     content: "";
     width: 100%;
     display: inline-block;
-    height: 0;
+    height: 0; */
 }
 
 .nav__item {
@@ -99,16 +107,29 @@ address {
     margin:0 13px;
 }
 
+.nav__item_ferst {
+    margin-left: 0;
+}
+
 .nav__main {
     background: url(../../IMG/Menu/main_icon.png)0 0 no-repeat;
+}
+.nav__main--hover {
+    background: url(../../IMG/Menu/hover/main_icon_hover.png)0 0 no-repeat;
 }
 
 .nav__feed {
     background: url(../../IMG/Menu/feed_icon.png)0 0 no-repeat;
 }
+.nav__feed--hover {
+    background: url(../../IMG/Menu/hover/feed_icon_hover.png)0 0 no-repeat;
+}
 
 .nav__service {
     background: url(../../IMG/Menu/service_icon.png)0 0 no-repeat;
+}
+.nav__service--hover {
+    background: url(../../IMG/Menu/hover/service_icon_hover.png)0 0 no-repeat;
 }
 
 .nav__link {
@@ -123,6 +144,7 @@ address {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #fff;
     /* float: left;
     margin-right: 20px; */
 }
@@ -133,16 +155,16 @@ address {
     display: inline-block;
     vertical-align: middle;
     display: block; */
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
     margin-right: 15px;
 }
 
-.nav__link:hover .nav__text {
-    color: rgb(248, 149, 19);
+.nav__link:hover {
+    color: #f89513;
 }
 
 .contacts__phone {
