@@ -109,28 +109,56 @@ address {
 
 .nav__item_ferst {
     margin-left: 0;
+} 
+
+.nav__link:hover {
+    color: #f89513;
+    /* background: url(../../IMG/Menu/hover/main_icon_hover.png)0 0 no-repeat;
+    background: url(../../IMG/Menu/hover/feed_icon_hover.png)0 0 no-repeat;
+    background: url(../../IMG/Menu/hover/service_icon_hover.png)0 0 no-repeat; */
 }
 
 .nav__main {
     background: url(../../IMG/Menu/main_icon.png)0 0 no-repeat;
 }
-.nav__main--hover {
+.nav__link:hover .nav__main--hover {
     background: url(../../IMG/Menu/hover/main_icon_hover.png)0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: 50%;
 }
 
 .nav__feed {
-    background: url(../../IMG/Menu/feed_icon.png)0 0 no-repeat;
+    background: url(../../IMG/Menu/feed_icon.png);
 }
-.nav__feed--hover {
+.nav__link:hover .nav__feed--hover {
     background: url(../../IMG/Menu/hover/feed_icon_hover.png)0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: 50%;
 }
 
 .nav__service {
     background: url(../../IMG/Menu/service_icon.png)0 0 no-repeat;
 }
-.nav__service--hover {
+.nav__link:hover .nav__service--hover {
     background: url(../../IMG/Menu/hover/service_icon_hover.png)0 0 no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: 50%;
 }
+
+/* .nav__link:hover .nav__main--hover
+.nav__feed--hover
+.nav__service--hover {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: 50%;
+} */
 
 .nav__link {
     display: flex;
@@ -150,11 +178,6 @@ address {
 }
 
 .nav__icon {
-    /* width: 24px;
-    height: 16px;
-    display: inline-block;
-    vertical-align: middle;
-    display: block; */
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -163,9 +186,7 @@ address {
     margin-right: 15px;
 }
 
-.nav__link:hover {
-    color: #f89513;
-}
+
 
 .contacts__phone {
     font-size: 21px;
